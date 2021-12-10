@@ -13,6 +13,13 @@
 <meta name="theme-color" content="#FF0000"/>
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="/manifest.json" />
+	<script>
+		document.addEventListener("DOMContentLoaded",function(){
+			if (window.location.search.indexOf('v=') > -1) {
+			    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
+			}
+		});
+	</script>
 </head>
 <body>
 
@@ -35,10 +42,5 @@
 
 
 	<script src="/app.js" async></script>
-	<script>
-		if (window.location.search.indexOf('v=') > -1) {
-		    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
-		}
-	</script>
 </body>
 </html>
