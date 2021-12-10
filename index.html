@@ -17,6 +17,7 @@
 		window.addEventListener("load",function(){
 				if (window.location.search.indexOf('v=') > -1) {
 				    document.querySelector("body > center > form > input").value = `https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`;
+				    document.querySelector("body > center > form > button").click()
 				}
 		});
 	</script>
