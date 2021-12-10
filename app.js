@@ -21,7 +21,7 @@ function youtubeUrlParser(url) {
     startSeconds: videoStartSeconds,
     showRelated: videoShowRelated
   })
-  var html = `<style>body,html{margin: 0;overflow: hidden;}</style><iframe width=100% height=100% src="https://www.youtube.com/embed/${videoId}?autoplay=1&cc_load_policy=1&rel=0&showinfo=0"frameborder="0" allow="autoplay" allowfullscreen></iframe>`;
+  var html = `<style>body,html{margin: 0;overflow: hidden;}</style><iframe width=100% height=100% src="https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&cc_load_policy=1&rel=0&showinfo=0"frameborder="0" allow="autoplay" allowfullscreen></iframe>`;
 	document.body.innerHTML = html;
 	document.querySelector('html').style.height = '100%';
 	document.querySelector('body').style.height = '100%';
