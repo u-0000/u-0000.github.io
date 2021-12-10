@@ -28,10 +28,10 @@ function youtubeUrlParser(url) {
 	
 	if (DetectIt.deviceType == 'touchOnly') {
 		document.body.innerHTML += '<div id="cat" style="position: fixed; top: 50%; right: 0; bottom: 0; left: 0; z-index: 999; height:50%"></div>';
-		document.querySelector("#cat").style.background = `url('img/vibin.gif') bottom left / contain no-repeat`;
+		document.querySelector("#cat").style.background = `url('/vibin.gif') bottom left / contain no-repeat`;
 	} else {
 		document.body.innerHTML += '<div id="cat" style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 999"></div>';
-		document.querySelector("#cat").style.background = `url('img/vibin.gif') bottom left / contain no-repeat`;
+		document.querySelector("#cat").style.background = `url('/vibin.gif') bottom left / contain no-repeat`;
 	}
 };
 function submitForm(that) {
