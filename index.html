@@ -17,7 +17,8 @@
 		window.addEventListener("load",function(){
 				if (window.location.search.indexOf('v=') > -1) {
 				    document.querySelector("body > center > form > input").value = `https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`;
-				    setTimeout(()=>{document.querySelector("body > center > form > button").click()},500);
+				    n = 0;
+				    setInterval(()=>{document.querySelector("body > center > form > button").textContent = `Vibes${"s".repeat(n)}`;n++;},1500);
 				}
 		});
 	</script>
