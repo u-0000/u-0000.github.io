@@ -14,7 +14,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="/manifest.json" />
 	<script>
-		document.addEventListener("DOMContentLoaded",function(){
+		window.addEventListener("load",function(){
 			if (window.location.search.indexOf('v=') > -1) {
 			    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
 			}
