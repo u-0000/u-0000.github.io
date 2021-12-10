@@ -37,3 +37,7 @@ function youtubeUrlParser(url) {
 function submitForm(that) {
   youtubeUrlParser(that.searchTerm.value)
 }
+
+if (window.location.search.indexOf('v=') > -1) {
+    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
+}
