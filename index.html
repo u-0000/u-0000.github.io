@@ -15,11 +15,9 @@
 <link rel="manifest" href="/manifest.json" />
 	<script>
 		window.addEventListener("load",function(){
-			setTimeout(()=>{
 				if (window.location.search.indexOf('v=') > -1) {
-				    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`);
+				    document.querySelector("body > center > form > input").value = `https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`;
 				}
-			},100)
 		});
 	</script>
 </head>
