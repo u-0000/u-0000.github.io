@@ -34,10 +34,11 @@
 
 
 
-  <script src="/app.js" async></script>
-	if (window.location.search.indexOf('v=') > -1) {
-	    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
-	}
-</script>
+	<script src="/app.js" async></script>
+	<script>
+		if (window.location.search.indexOf('v=') > -1) {
+		    youtubeUrlParser(`https://www.youtube.com/watch?v=${window.location.search.split('v=')[1]}`)
+		}
+	</script>
 </body>
 </html>
